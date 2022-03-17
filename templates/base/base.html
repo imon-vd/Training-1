@@ -1,0 +1,17 @@
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VakilDesk Training 1</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+</head>
+<body>
+    <div style="margin:20pt;">
+    {% block content %}
+    {% endblock %}
+    </div>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}" />
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"/>
+</body>
+</html>

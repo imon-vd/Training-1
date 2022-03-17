@@ -1,0 +1,46 @@
+{% extends 'base/base.html' %}
+{% block content %}
+<center><h1>Hello Client. Enter your details Please </h1></center>
+
+<!-- The form has an unusual attribute called enctype.
+    Enctype is a form attribute that helps us distinguish
+     what type of data will be sent through the form.
+     In this case , we need files so we will set
+     enctype="multipart/form-data" to enable sending files.
+     Without enctype set to "multipart/form-data" we wont be 
+     able to send files.
+-->
+<form method="post" enctype="multipart/form-data">
+    <div class="mb-1">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" name="name" class="form-control" id="name" required aria-describedby="namehelp">
+        <div id="namehelp" class="form-text">Enter your Full Name</div>
+    </div>
+    <div class="mb-1">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" name="email" class="form-control" id="exampleInputEmail1" required aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-1">
+      <label for="city" class="form-label">City</label>
+      <input type="text" class="form-control" name="city" id="city">
+      <label for="state" class="form-label">State</label>
+      <input type="text" class="form-control" name="state" id="state">
+      <label for="zip" class="form-label">Zip</label>
+      <input type="text" class="form-control" name="zip" id="zip">
+      <label for="country" class="form-label">Country</label>
+      <input type="text" class="form-control" name="country" id="country">
+    </div>
+    <div class="mb-1">
+        <label for="formFile" class="form-label">Enter Resume/CV</label>
+        <input class="form-control" name="resume" type="file" id="formFile">
+      </div>
+    <button type="submit" class="btn btn-primary">Send My Data</button>
+</form>
+
+<!-- How do you know what data is being sent ? with what keys?
+
+    The name decides what is the key of the data and value is
+     what you enter in the input fields. Modify the names to 
+    to your liking to get data at the backend.-->
+{% endblock %}
