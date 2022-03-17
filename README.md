@@ -8,10 +8,9 @@ You will be given a boilerplate project which is partially complete , and rest y
     PS: This project assumes you have PostgreSQL server installed and running in your computer.
 ## By the end of this you'll know how to :
 1. Handling Form Submissions.
-2. Validating Form Fields.
-3. Saving Form Entries in DataBase.
-4. Serving a File.
-5. Sending emails using Django.
+2. Saving Form Entries in DataBase.
+3. Serving a File.
+4. Sending emails using Django.
 
 # Setting up the project.
 

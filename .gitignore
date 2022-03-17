@@ -58,7 +58,7 @@ coverage.xml
 # Static & Media files
 static/
 media/
-
+static.zip
 
 # Django stuff:
 *.log
